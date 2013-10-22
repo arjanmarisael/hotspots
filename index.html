@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/hotspots.json"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/detail.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<title>HOTSPOTS</title>
+</head>
+<body>
+
+	<header>
+
+		<img src="assets/logomark.png" class="logomark">
+		<h1>HTSPT</h1>
+		<h2>D&eacute; hotspot-finder van Nederland</h2>
+
+		<ul>
+			<li rel="informatie">Informatie</li>
+			<li rel="dataset">Datasets</li>
+			<li rel="contact">Contact</li>
+		</ul>
+
+	</header>
+
+	<div id="mapContainer">
+		<ul id="legenda">
+			<li class="rust" rel="rust"><i></i>Rust</li>
+			<li class="groen" rel="groen"><i></i>Groen</li>
+			<li class="connectivity" rel="connectiviteit"><i></i>Connectivity</li>
+			<li class="hipheid" rel="hipheid"><i></i>Hipheid</li>
+		</ul>
+		<div id="map"></div>
+		<div class="gradient"></div>
+	</div>
+
+	<div id="detail">
+		<div class="close"></div>
+		<div class="content">
+			<div class="adres"><span class="icon"></span><span class="text">ADRES XXX</span></div>
+			<h3 class="title">TITLE XXX</h3>
+			<div class="text">lorem ipsum</div>
+		</div>
+		<div class="icon-large"></div>
+	</div>
+
+	<div id="pages">
+
+		<div class="container">
+
+			<div class="page informatie">
+				Hotspots is een interactieve map waarbij je als gebruiker snel kan zoeken naar een plek in Nederland die aan jou eisen voldoet. Zoek je namelijk de plek waar je ongestoord kan lezen in een goed boek dan is misschien het bankje op de stilste plek van Nederland iets voor jou. Ga opzoek naar voor jou het meest bijzondere plekje Nederland en bezoek het eens, want wie kan nou zeggen dat hij/zij op het laagste punt in Nederland is geweest. 
+			</div>
+
+			<div class="page dataset">
+				De data hebben we verzameld door middel van het bezoeken van de hotspots. Door verschillende meetinstrumenten hebben we de data op een zo goed mogelijke manier proberen te verkrijgen. De data is allemaal verzameld op woensdag 9 september.
+				<br>
+				<br>
+				Bronnen:<br>
+				www.monumentaltrees.com<br>
+				www.cityzapper.nl<br>
+				www.hotspotholland.nl<br>
+				www.wikipedia.org<br>
+				www.vvvdeventer.nl<br>
+				www.molendatabase.nl<br>
+				www.cbs.nl
+			</div>
+
+			<div class="page contact">
+				Minor Databeleving<br>
+				Avans Hogeschool Den Bosch<br>
+				Onderwijsboulevard 215<br>
+				5223 DE 's-Hertogenbosch<br>
+				Postbus 90.116, 4800 RA Breda<br>
+				Receptie: (073) 629 52 95
+			</div>
+
+		</div>
+
+		<div class="close"></div>
+	</div>
+
+</body>
